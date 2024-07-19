@@ -15,39 +15,51 @@
     <link rel="manifest" href="./manifest.json">
 </head>
 
-<body>
-<div class="container" data-background="lime">
-<p class="text-inner butInstall">
-A problem has been detected and Windows has been shut down to prevent damage<br>
-to your computer. <br><br>
+<body class="noselect" style="background-color:#0078D7;" onresize="resize()" id="body">
+    <table id=masterTable style="width:100%;height:100%" cellpadding=80>
+        <tr>
+            <td>
+                <div style="color:white;position:absolute;left:80px;top:100px" spellcheck="false">
 
-The problem seems to be caused by the following file: xNtKrnl.exe<br><br>
+                    <table cellpadding=5>
+                        <tr> <td>
+                             <span style="font-size:100px">:(</span>
+                        </td></tr>
+                    </table>
+                    <br> <br> <br>
 
-SYSTEM_THREAD_EXCEPTION_NOT_HANDLED <br><br>
+                    <table cellpadding=10>
+                        <tr>
+                            <td>
+                                <p style="font-size:20px">
 
-If this is the first time you've seen this stop error screen,<br>
-restart your computer. If this screen appears again, follow<br>
-these steps:<br><br>
+                                    Your <c id=devicename>PC</c> ran into a problem and needs to restart. We're just collecting some error info, and then we'll restart for you.
+                                    <br>
+                                    <br> 98% complete</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <br>
 
-Check to make sure any new hardware or software is properly installed.<br>
-If this is a new installation, ask your hardware or software manufacturer<br>
-for any Windows updates you might need.<br><br>
+                    <table cellpadding=10>
+                        <tr><td>
+                            <div style="background:white">
+                                <img style="width:150px" src="./images/bsod-qr.svg" id="qr"></img>
+                            </dv>
+                        </td><td>
+                            <span style="font-size:20px">
+                                For more information about this issue and possible fixes, visit
+                                <br> http://windows.com/stopcode
+                                <br>
+                                <br> If you call a support person, give them this info:
+                                <br>Stop code: CRITICAL_PROCESS_DIED
+                            </span>
+                       </td></tr>
+                    </table>
+                </div>
+            </td>
+        </tr>
+    </table>
 
-If problems continue, disable or remove any newly installed hardware<br>
-or software. Disable BIOS memory options such as caching or shadowing.<br>
-If you need to use safe mode to remove or disable components, restart<br>
-your computer, press F8 to select Advanced Startup Options, and then<br>
-select Safe Mode.<br><br>
-
-Technical Information:<br><br>
-
-*** STOP: 0x1000007e (0xffffffffc0000005, 0xfffff80002e55151, 0xfffff880009a99d8,<br>
-0xfffff880009a9230)<br><br>
-
-*** xNtKrnl.exe - Address 0xfffff80002e55151 base at 0xfffff80002e0d000 DateStamp<br>
-0x4ce7951a<br>
-</p>
-</div>
-
-</body>
+    <body>        
 </html>

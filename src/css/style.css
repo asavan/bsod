@@ -1,38 +1,15 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-:root {
-  --main-color: #F0F8FF;
-  --player-color: chartreuse;
-  --field-size: 4;
-  --card-width: 120px;
-  --color-green: #5A5;
-  --color-red: #F55;
-  --color-yellow: #FA0;
-  --color-blue: #55F;
-  --current-color: aliceblue;
-  --inverted-color: white;
-}
-
-html, body { height: 100%; }
-
-.container {
-  padding: 1rem;
-  min-height: 100%;
-  color: white;
-  font-size: 1.5rem;
-  background-color: #0047bb;
-}
-
-.text-inner {
-  width: 100%;
-  font-family: monospace;
+span, p {
+  font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+  line-height: 30px;
   color: white;
 }
 
-.hidden { display: none; }
-
-@media (max-width: 500px) { .container { font-size: 1rem; } }
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  user-select: none; /* Safari */
+  user-select: none; /* Konqueror HTML */
+  user-select: none; /* Firefox */
+  user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                supported by Chrome and Opera */
+}
