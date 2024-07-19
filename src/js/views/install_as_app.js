@@ -1,15 +1,3 @@
-function hideElem(el) {
-    if (el) {
-        el.classList.add("hidden");
-    }
-}
-
-function showElem(el) {
-    if (el) {
-        el.classList.remove("hidden");
-    }
-}
-
 export default function install(window, document) {
     const btnAdd = document.querySelector(".butInstall");
     if (!btnAdd) {
@@ -19,7 +7,6 @@ export default function install(window, document) {
     let deferredPrompt;
     btnAdd.addEventListener("click", (e) => {
         e.preventDefault();
-        hideElem(btnAdd);
         // Show the prompt
         deferredPrompt.prompt();
         // Wait for the user to respond to the prompt
@@ -33,7 +20,6 @@ export default function install(window, document) {
         e.preventDefault();
         // Stash the event so it can be triggered later.
         deferredPrompt = e;
-        showElem(btnAdd);
     });
     return btnAdd;
 }
