@@ -17,30 +17,16 @@
   --inverted-color: white;
 }
 
-html, body { height: 100%; }
+html, body { min-height: 100%; }
 
 .container {
   padding: 1rem;
-  height: 100%;
+  min-height: 100%;
   color: white;
   font-size: 1.5rem;
   background-color: #0047bb;
 }
 
-.text-inner {
-  width: 100%;
-}
-
+.text-inner { width: 100%; }
 
 .hidden { display: none; }
-
-.transparent { opacity: 0; }
-
-.absolute { position: absolute; }
-
-.above {
-  z-index: 1;
-  transform: translateZ(10px);
-}
-
-.slide { transform: translate(calc(1px * var(--dx)), calc(1px * var(--dy))); }
