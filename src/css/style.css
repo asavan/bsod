@@ -8,3 +8,8 @@ span, p {
   -webkit-touch-callout: none;
   user-select: none;
 }
+
+.container {
+  width: 100%;
+  height: 100%;
+}
