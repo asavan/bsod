@@ -20,7 +20,7 @@ export default function install(window, document) {
             deferredPrompt.userChoice.then((resp) => {
                 console.log(JSON.stringify(resp));
             });
-        });    
+        });
     });
     return btnAdd;
 }
