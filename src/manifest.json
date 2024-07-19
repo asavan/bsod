@@ -1,0 +1,22 @@
+{
+  "name": "The bsod app",
+  "short_name": "bsod",
+  "icons": [
+    {
+      "src": "./images/win512.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "./images/icon512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "start_url": "./",
+  "display": "standalone"
+}
