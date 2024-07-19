@@ -5,11 +5,6 @@ span, p {
 }
 
 .noselect {
-  -webkit-touch-callout: none; /* iOS Safari */
-  user-select: none; /* Safari */
-  user-select: none; /* Konqueror HTML */
-  user-select: none; /* Firefox */
-  user-select: none; /* Internet Explorer/Edge */
-  user-select: none; /* Non-prefixed version, currently
-                                supported by Chrome and Opera */
+  -webkit-touch-callout: none;
+  user-select: none;
 }
