@@ -15,7 +15,7 @@
     <link rel="manifest" href="./manifest.json">
 </head>
 
-<body class="noselect" style="background-color:#0078D7;" onresize="resize()" id="body">
+<body class="noselect" style="background-color:#0078D7;" id="body">
     <table id=masterTable cellpadding=80 class="container butInstall">
         <tr>
             <td>
@@ -33,7 +33,7 @@
                             <td>
                                 <p style="font-size:20px">
 
-                                    Your <c id=devicename>PC</c> ran into a problem and needs to restart. We're just collecting some error info, and then we'll restart for you.
+                                    Your <span id=devicename>PC</span> ran into a problem and needs to restart. We're just collecting some error info, and then we'll restart for you.
                                     <br>
                                     <br> 98% complete</p>
                             </td>
@@ -44,8 +44,8 @@
                     <table cellpadding=10>
                         <tr><td>
                             <div style="background:white">
-                                <img style="width:150px" src="./images/bsod-qr.svg" id="qr"></img>
-                            </dv>
+                                <img style="width:150px" src="./images/bsod-qr.svg" id="qr" alt="qr"></img>
+                            </div>
                         </td><td>
                             <span style="font-size:20px">
                                 For more information about this issue and possible fixes, visit
@@ -60,6 +60,5 @@
             </td>
         </tr>
     </table>
-
-    <body>        
+    </body>
 </html>
